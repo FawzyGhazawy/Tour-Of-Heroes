@@ -13,11 +13,11 @@ import { MessageService } from '../message.service';
 
 })
 export class HeroesComponent implements OnInit {
-  selectedHero ?: Hero
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  } 
+  // selectedHero ?: Hero
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  // }  hayde eza bede yeha tbayen bnafs l page ye3ne ma ta3mel navigate la new detail component page
   // heroes = HEROES;
   heroes : Hero[] = [];
   constructor(private heroService : HeroService, private messageService: MessageService){}
